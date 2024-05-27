@@ -4,14 +4,17 @@ import logo from "../../Images/Logo.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(true);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => {
     setMenu(!menu);
   };
 
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target as Node)
+    ) {
       setMenu(true);
     }
   };
@@ -22,14 +25,14 @@ const Navbar = () => {
 
   useEffect(() => {
     if (!menu) {
-      document.addEventListener("click", handleClickOutside);
+      document.addEventListener("click", handleClickOutside as EventListener);
       document.addEventListener("scroll", handleScroll);
     } else {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside as EventListener);
       document.removeEventListener("scroll", handleScroll);
     }
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside as EventListener);
       document.removeEventListener("scroll", handleScroll);
     };
   }, [menu]);

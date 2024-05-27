@@ -120,7 +120,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({ number, classname, t
     </div>
 );
 
-const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, nonVegMeals }) => {
+const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, vegMeals, nonVegMeals }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextSlide = () => {
