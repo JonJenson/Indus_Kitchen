@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { MealsItem, BreakfastMenu, LunchMenu, DinnerMenu } from "../../Data/menu-data";
 
 interface MenuItemCardProps {
@@ -120,7 +120,7 @@ export const MenuItemCard: React.FC<MenuItemCardProps> = ({ number, classname, t
     </div>
 );
 
-const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, nonVegMeals }) => {
+const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, vegMeals, nonVegMeals }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextSlide = () => {
@@ -172,7 +172,7 @@ const MenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, 
     );
 };
 
-export const MobileMenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, title, vegMeals, nonVegMeals }) => {
+export const MobileMenuItemsCard: React.FC<MenuItemsCardProps> = ({ number, vegMeals, nonVegMeals }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextSlide = () => {
