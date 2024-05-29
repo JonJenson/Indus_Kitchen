@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import{ useState, useEffect } from 'react';
 import Navbar from './Components/navbar/navbar';
 import Home from './Components/home/home';
 import About from './Components/about/about';
@@ -54,6 +54,12 @@ function App() {
         <Achievements />
         <News />
         <Footer />
+        <div id="developed-by">
+          <p>
+            Developed by &nbsp;
+            <a href="https://github.com/Akilesh-ML-Engineer">Akilesh A S</a>
+          </p>
+        </div>
         <SmallScreen />
       </div>
       <button
