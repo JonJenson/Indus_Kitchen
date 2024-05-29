@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MenuTitleCard from "./menu-title-card";
 import MenuItemsCard, { MobileMenuItemsCard } from "./menu-item-card";
 import { MenuPackageTitles, MenuPackageItems } from "../../Data/menu-data";
