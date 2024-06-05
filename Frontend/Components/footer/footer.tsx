@@ -84,6 +84,18 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="dev-section" id="developed-by">
+                        <p className="title">Developed By</p>
+                        <ul>
+                            <li><a href="#">Chatoorika</a></li>
+                            <li><a href="https://github.com/Akilesh-ML-Engineer">Akilesh</a></li>
+                            <li><a href="https://github.com/roopeshkumarm">Roopesh Kumar</a></li>
+                            <li><a href="https://github.com/JonJenson">Jon Jenson</a></li>
+                            <li><a href="https://github.com/Pavadareni">Pavadareni</a></li>
+                            <li><a href="https://www.linkedin.com/in/swetha-s-377063257">Swetha </a></li>
+
+                        </ul>
+                    </div>
                 </div>
                 <div className="copyrights-container">
                     <p>Copyright &copy; 2024 Indu's Kitchen All Rights Reserved.</p>
