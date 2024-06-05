@@ -1,4 +1,4 @@
-#footer{
+#footer {
     background-color: #FDC360;
     height: 100%;
     width: 100%;
@@ -24,7 +24,7 @@
     border-top: 1px solid #000000;
 }
 
-.container-foot .copyrights-container p:nth-child(1){
+.container-foot .copyrights-container p:nth-child(1) {
     font-size: 1rem;
     margin-bottom: -5px;
 }
@@ -62,7 +62,8 @@
 }
 
 .container-foot .footer-container .quick-link-section .quick-link-cont .in-sec ul,
-.container-foot .footer-container .supported-link-section ul {
+.container-foot .footer-container .supported-link-section ul,
+.container-foot .footer-container .dev-section ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -72,7 +73,8 @@
 }
 
 .container-foot .footer-container .quick-link-section .quick-link-cont .in-sec ul li a,
-.container-foot .footer-container .supported-link-section ul li {
+.container-foot .footer-container .supported-link-section ul li,
+.container-foot .footer-container .dev-section ul li {
     text-decoration: none;
     color: #000000;
     font-size: 1.05rem;
@@ -83,7 +85,8 @@
 
 .container-foot .footer-container .quick-link-section .title,
 .container-foot .footer-container .supported-link-section .title,
-.container-foot .footer-container .contact-section .title {
+.container-foot .footer-container .contact-section .title,
+.container-foot .footer-container .dev-section .title {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 3.5rem;
@@ -91,7 +94,8 @@
 }
 
 .container-foot .footer-container .supported-link-section .title,
-.container-foot .footer-container .contact-section .title {
+.container-foot .footer-container .contact-section .title,
+.container-foot .footer-container .dev-section .title {
     text-align: start;
 }
 
@@ -173,8 +177,44 @@
     font-size: 1.5rem;
 }
 
+/* Add styling for the new dev-section */
+.container-foot .footer-container .dev-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container-foot .footer-container .dev-section ul li {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+#developed-by a {
+    text-decoration: none;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#developed-by a:hover {
+    color: #e35633;
+}
+
+
 @media screen and (min-width: 1290px) and (max-width: 1500px) {
-    .container-foot .footer-container{
+    .container-foot .footer-container {
         width: 95%;
     }
     .container-foot .footer-container .quick-link-section .quick-link-cont {
@@ -183,7 +223,7 @@
 }
 
 @media screen and (min-width: 1190px) and (max-width: 1290px) {
-    .container-foot .footer-container{
+    .container-foot .footer-container {
         width: 98%;
     }
     .container-foot .footer-container .quick-link-section .quick-link-cont {
@@ -211,7 +251,8 @@
     }
     .container-foot .footer-container .quick-link-section,
     .container-foot .footer-container .supported-link-section,
-    .container-foot .footer-container .contact-section {
+    .container-foot .footer-container .contact-section,
+    .container-foot .footer-container .dev-section {
         align-self: flex-start;
     }
 }
@@ -232,7 +273,8 @@
     }
     .container-foot .footer-container .quick-link-section,
     .container-foot .footer-container .supported-link-section,
-    .container-foot .footer-container .contact-section {
+    .container-foot .footer-container .contact-section,
+    .container-foot .footer-container .dev-section {
         align-self: flex-start;
     }
     .container-foot .footer-container .quick-link-section .quick-link-cont {
@@ -256,7 +298,8 @@
     }
     .container-foot .footer-container .quick-link-section,
     .container-foot .footer-container .supported-link-section,
-    .container-foot .footer-container .contact-section {
+    .container-foot .footer-container .contact-section,
+    .container-foot .footer-container .dev-section {
         align-self: flex-start;
     }
     .container-foot .footer-container .quick-link-section .quick-link-cont {
@@ -283,13 +326,14 @@
 
 @media screen and (max-width: 655px) {
     .container-foot .footer-container {
-       flex-direction: column;
-       width: 80%;
+        flex-direction: column;
+        width: 80%;
     }
     .container-foot .footer-container .media-section,
     .container-foot .footer-container .quick-link-section,
     .container-foot .footer-container .supported-link-section,
-    .container-foot .footer-container .contact-section {
+    .container-foot .footer-container .contact-section,
+    .container-foot .footer-container .dev-section {
         width: fit-content;
     }
     .container-foot .footer-container .media-section {
@@ -339,17 +383,16 @@
         justify-content: end;
         align-items: end;
     }    
-
 }
 
 @media screen and (max-width: 500px) {
-    .container-foot .copyrights-container p:nth-child(1){
+    .container-foot .copyrights-container p:nth-child(1) {
         font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width:350px) {
-    #footer{
+@media screen and (max-width: 350px) {
+    #footer {
         display: none;
     }
 }
