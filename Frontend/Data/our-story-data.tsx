@@ -43,7 +43,7 @@ export const OurStoryContent: OurStoryItem[] = [
     },
     {
         title: "Commitment to Excellence",
-        description: "believing that the true essence of her culinary creations lies in using the finest ingredients and maintaining the highest standards, even if it means the prices are a bit higher.",
+        description: "Believing that the true essence of her culinary creations lies in using the finest ingredients and maintaining the highest standards, even if it means the prices are a bit higher.",
         storyImageUrl: ScImg4,
         leftBannerImageUrl: ScLbImg4,
         rightBannerImageUrl: ScRbImg4,
